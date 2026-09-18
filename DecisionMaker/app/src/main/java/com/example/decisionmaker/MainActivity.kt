@@ -151,7 +151,7 @@ fun DecisionScreen(
 fun probabilityFinder (buttonProbability: Double): String {
     val randomNumber = Math.random()
     val answer: String =
-        // 25% change of 0.0 to 1.0 nubmer being under 0.25 so it wokrs
+        // 25% chance of 0.0 to 1.0 nubmer being under 0.25
         if (randomNumber < buttonProbability) "Yes"
         else "No"
     return answer
